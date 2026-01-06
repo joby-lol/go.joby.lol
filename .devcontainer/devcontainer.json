@@ -1,0 +1,19 @@
+{
+	"name": "Dev Container",
+	"dockerComposeFile": "docker-compose.yaml",
+	"workspaceFolder": "/var/www",
+	"service": "site",
+	"postStartCommand": "apache2ctl graceful",
+	"postAttachCommand": "apache2ctl graceful",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"SanderRonde.phpstan-vscode",
+				"DEVSENSE.profiler-php-vscode",
+				"DEVSENSE.phptools-vscode",
+				"DEVSENSE.intelli-php-vscode",
+				"DEVSENSE.composer-php-vscode"
+			]
+		}
+	}
+}
