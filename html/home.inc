@@ -2,7 +2,7 @@
 <html>
 
     <head>
-        <title>Link Directory</title>
+        <title>Joby's shortlink directory</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
@@ -37,7 +37,10 @@
     </head>
 
     <body>
-        <h1>Available Links</h1>
+        <h1>Joby's shortlink directory</h1>
+        <p>
+            This is my URL shortener directory. Below is a list of my shortlinks. To see my main site visit <a href="https://joby.lol">joby.lol</a>.
+        </p>
         <ul>
             <?php
 
