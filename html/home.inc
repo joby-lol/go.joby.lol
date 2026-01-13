@@ -11,25 +11,20 @@
                 margin: 2em;
                 background-color: #f9f9f9;
             }
-
             h1 {
                 color: #333;
             }
-
             ul {
                 list-style-type: none;
                 padding: 0;
             }
-
             li {
                 margin: 0.5em 0;
             }
-
             a {
                 text-decoration: none;
                 color: #1a0dab;
             }
-
             a:hover {
                 text-decoration: underline;
             }
@@ -47,7 +42,7 @@
             while (($line = fgets($file)) !== false) {
                 $line = explode(',', $line);
                 $line = array_map(trim(...), $line);
-                echo '<li><a href="' . htmlspecialchars($line[1]) . '"><strong>' . htmlspecialchars($line[0]) . '</strong>: ' . htmlspecialchars($line[1]) . '</a></li>';
+                echo '<li><a href="/' . htmlspecialchars($line[0]) . '"><strong>' . htmlspecialchars($line[0]) . '</strong>: ' . htmlspecialchars($line[1]) . '</a></li>';
             }
             fclose($file);
             ?>

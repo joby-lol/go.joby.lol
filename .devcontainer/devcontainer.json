@@ -5,6 +5,9 @@
 	"service": "site",
 	"postStartCommand": "apache2ctl graceful",
 	"postAttachCommand": "apache2ctl graceful",
+	"mounts": [
+		"source=${localWorkspaceFolder},target=/var/www,type=bind"
+	],
 	"customizations": {
 		"vscode": {
 			"extensions": [

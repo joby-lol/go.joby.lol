@@ -1,16 +1,10 @@
-# Set up image to match production environment
+# Set up base image
 FROM php:8.4-apache
-RUN a2enmod rewrite
 
-# Begin dev environment setup
-
-# Run apt update
+# Install things and set settings
 RUN apt-get update
-
-# Install git
-RUN apt-get install -y git
-
-# Install composer
+RUN apt-get install -y git unzip
+RUN a2enmod rewrite
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 # Enable xdebug

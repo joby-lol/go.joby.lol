@@ -1,4 +1,4 @@
-# Set up image to match dev environment
+# Set up base image
 FROM php:8.4-apache
 RUN a2enmod rewrite
 

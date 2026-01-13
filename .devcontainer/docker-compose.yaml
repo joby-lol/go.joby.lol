@@ -3,5 +3,3 @@ services:
     build: .
     ports:
       - "17170:80"
-    volumes:
-      - ../:/var/www
